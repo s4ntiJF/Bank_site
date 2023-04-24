@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Loja</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenido-header">
+            <a href="index.html" class="logo" title="Banco de Loja">
+                <img src="https://www.bancodeloja.fin.ec/Portals/0/LogoBancodeLoja.svg?ver=r2IWyGLkyvRVcuoH0vtdDw%3d%3d" alt="Logotipo Banco de Loja" class="imagen-logo">
+            </a>
+            <div class="navegacion-responsive">
+                <img src="img/barras.svg" alt="navegacion responsive">
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-white">
+        <nav class="contenedor navegacion">
+            <a href="cuentas.html">Cuentas</a>
+            <a href="creditos.html">Créditos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="promociones.html">Campañas y promociones</a>
+            <a href="tarjetas.html">Tarjetas</a>
+        </nav>
+    </div>
+
+    <div class="imagen-fondo">
+        <section class="fondo">
+            <h1>Oficinas Banco de Loja</h1>
+            <p>Las oficinas del Banco de Loja se encuentran ubicadas en todas las ciudades del Ecuador</p>
+        </section>
+    </div>
+
+    <main class="contenedor centrado">
+        <div class="border-solicitud">
+            <h1 class="titulo-producto">Solicitud de producto</h1>
+        </div>
+
+        <form class="formulario">
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="productos">Producto</label>
+                </div>
+                <select class="campo__field" id="productos">
+                    <option value="">Seleccione un producto</option>
+                    <option value="cuentas">Cuentas</option>
+                    <option value="inversiones">Inversiones</option>
+                    <option value="creditos">Créditos</option>
+                    <option value="tarjeta credito">Tarjeta de Crédito</option>
+                </select>
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="">Subproducto</label>
+                </div>
+                <select class="campo__field" id="subproductos">
+                    <option value="">Seleccione un subproducto</option>
+                    <option value="corriente">Corriente</option>
+                    <option value="ahorros">Ahorros</option>
+                    <option value="crecediario">Crecediario</option>
+                    <option value="giro ahorro">Giro Ahorro</option>
+                    <option value="ahorro objetivo">Ahorro Objetivo</option>
+                    <option value="pequebank">PequeBank</option>
+                    <option value="myway">MyWay</option>
+                    <option value="inversiones">Inversiones</option>
+                    <option value="empresarial">Empresarial</option>
+                    <option value="consumo">Consumo</option>
+                    <option value="vehiculo">Vehículo</option>
+                    <option value="vivienda">Vivienda</option>
+                    <option value="educativo">Educativo</option>
+                    <option value="tarjeta credito">Tarjeta de Crédito</option>
+                </select>
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="tipo-documento">Tipo documento</label>
+                </div>
+                <select class="campo__field" id="tipo-documento">
+                    <option value="cedula">Cédula</option>
+                    <option value="RUC">RUC</option>
+                </select>
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="n-documento">No. Documento</label>
+                </div>
+                <input type="text" class="campo__field" id="n-documento">
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="nombres">Nombres</label>
+                </div>
+                <input type="text" class="campo__field" id="nombres">
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="apellidos">Apellidos</label>
+                </div>
+                <input type="text" class="campo__field" id="apellidos">
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="edad">Edad</label>
+                </div>
+                <input type="text" class="campo__field" id="edad">
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="estado-civil">Estado Civil</label>
+                </div>
+                <select class="campo__field" id="estado-civil">
+                    <option value="soltero">Soltero</option>
+                    <option value="casado">Casado</option>
+                </select>
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="correo">Correo electrónico</label>
+                </div>
+                <input type="email" class="campo__field" id="correo">
+            </div>
+            <div class="campo">
+                <label for="telefono1" class="campo__label">Teléfono convencional</label>
+                <input type="tel" class="campo__field" id="telefono1">
+            </div>
+            <div class="campo">
+                <label for="telefono2" class="campo__label">Teléfono celular</label>
+                <input type="tel" class="campo__field" id="telefono2">
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="ciudad">Ciudad de residencia</label>
+                </div>
+                <input type="text" class="campo__field" id="ciudad">
+            </div>
+            <div class="campo">
+                <div class="flex">
+                    <span class="asterisco">*</span>
+                    <label for="direccion">Dirección</label>
+                </div>
+                <input type="text" class="campo__field" id="direccion">
+            </div>
+            <div class="campo">
+                <label for="mensaje" class="campo__label">Observaciones</label>
+                <textarea id="mensaje" class="campo__field campo__field--textarea"></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="btn-enviar">
+            <div id="obligatorio"></div>
+        </form>
+    </main>    
+
+    <footer class="footer">
+        <div class="fondo-white">
+            <div class="contenedor columns-3-footer centrado">
+                <div class="border-section">
+                    <section class="column-1">
+                        <div class="border-footer">
+                            <h4 class="bold">Canales de Atención</h4>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Oficinas</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Cajeros Automáticos</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Banca Electrónica</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Banca Móvil</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Billetera Móvil - BIMO</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Boty</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Asesor en Vivo</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Puntos de Pago</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Banca Electrónica Empresarial</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Kioskos Web</a></p>
+                        </div>
+                        <p><a href="#">> Loja Aló</a></p>
+                    </section>
+                </div>
+                <div class="border-section">
+                    <section class="column-2">
+                        <div class="border-footer">
+                            <h4 class="bold">Nuestro Banco</h4>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Quienes Somos</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Información Accionista</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Gobierno Corporativo</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Trabaja con Nosotros</a></p>
+                        </div>
+                        <div class="border-footer">
+                            <p><a href="#">> Simulador de Productos</a></p>
+                        </div>
+                        <p><a href="#">> La magia de la tradición, calendario 2023</a></p>
+                    </section>
+                </div>
+                <section class="column-3">
+                    <div class="border-footer">
+                        <h4 class="bold">Links de Interés</h4>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Acciones de Apoyo</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Documentos Electrónicos</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Noticias</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Educación Financiera</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Transparencia de la Información</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Protección de datos personales</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Consultas, quejas o reclamos</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Defensor del cliente</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Consejos de seguridad</a></p>
+                    </div>
+                    <div class="border-footer">
+                        <p><a href="#">> Remates</a></p>
+                    </div>
+                    <p><a href="#">> Subastas</a></p>
+                </section>
+            </div>
+        </div>
+        <div class="color-grey">
+            <div class="contenedor columns-ubication centrado">
+                <img src="https://www.bancodeloja.fin.ec/portals/0/FooterContactNumber.png" alt="Telefono de contacto Banco de Loja" class="img-number">
+                <div class="border-ubicacion">
+                    <div class="ubication">
+                        <p>Bolívar 158-14 y Rocafuerte</p>
+                        <p>Loja-Ecuador</p>
+                        <p>(593-7) 3 701600</p>
+                        <p>Casilla #11.01.30</p>
+                        <p>Código SWIFT LOJBECEL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fondo-grey">
+            <div class="contenedor contenido-footer centrado">
+                <p>Todos los derechos reservados</p>
+                <p>Correo Electrónico: <strong>BancodeLoja@gmail.com</strong></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/formulario.js"></script>
+    <script src="js/responsive.js"></script>
+</body>
+</html>
