@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Loja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,39 +41,85 @@
         </section>
     </div>
 
-    <main class="contenedor centrado">
-        <div class="border-title">
-            <h1 class="titulo-campaña">Campañas y promociones</h1>
-        </div>
-        
-        <section class="contenedor-promociones">
-            <div class="promocion">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/PwojJxa050GGDnV9lfQZRQ/Icon/A_clases_con_actitud.JPG?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
-                <h3 class="promocion__titulo">Vuenve a clase con actitud</h3>
-                <p class="promocion__texto">Regreso a clases con Banco de Loja</p>
-            </div> <!-- campaña y promocion -->
-            <div class="promocion">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/zna9sSrvrUCTYPSMbCSz1A/Icon/MODULO-WEB.jpg?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
-                <h3 class="promocion__titulo">Crece y gana con tus utilidades</h3>
-                <p class="promocion__texto">Participa por $5.000 en premios</p>
-            </div> <!-- campaña y promocion -->
-            <div class="promocion">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/rSMPPWDE8Ue8Hxpp6fWiRQ/Icon/portada.JPG?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
-                <h3 class="promocion__titulo">Regalazo Navideño</h3>
-                <p class="promocion__texto">El mejor regalo te lo trae Visa Banco de Loja</p>
-            </div> <!-- campaña y promocion -->
-            <div class="promocion">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/pA9_8W2910qhB96dl-JVzA/Icon/modulo.jpg?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
-                <h3 class="promocion__titulo">San Valentín</h3>
-                <p class="promocion__texto">Tus consumos con tus tarjetas de crédito te premian</p>
-            </div> <!-- campaña y promocion -->
-            <div class="promocion">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/w17b7Y7MFESebRqMCMJ5Ig/Icon/ganador2.jpg?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
-                <h3 class="promocion__titulo">Ganadores</h3>
-                <p class="promocion__texto">Conoce a los increíbles ganadores de nuestras campañas</p>
-            </div> <!-- campaña y promocion -->
-        </section> <!-- contenedor campañas y promociones -->
-    </main>
+    <div class="contenedor centrado">
+
+        <nav class="navegacion-secundaria">
+            <a href="index.html">Principal</a>
+            <p>></p>
+            <a href="cuentas.html">Personas</a>
+            <p>></p>
+            <a href="promociones.html">Campañas y promociones</a>
+        </nav>
+
+        <main>
+            <div class="border-title">
+                <h1 class="titulo-campaña">Campañas y promociones</h1>
+            </div>
+            
+            <section class="columnas-4-imgs">
+                <div class="promocion">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/2_2fDKoSRkyqUJdlgEhRUw/Icon/Modulo.jpg?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
+                    <div class="promocion__margin">
+                        <h3 class="promocion__titulo">Mamá y Papá deciden a donde viajar</h3>
+                    </div>
+                    <div class="promocion__margin--texto promocion__margin--descripcion">
+                        <p class="promocion__descripcion">Tu tarjeta de crédito Visa te lleva al viaje de tus sueños</p>
+                    </div>
+                    <a href="#" class="promocion__link">Más información</a>
+                </div> <!-- campaña y promocion -->
+                <div class="promocion">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/PwojJxa050GGDnV9lfQZRQ/Icon/A_clases_con_actitud.JPG?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
+                    <div class="promocion__margin">
+                        <h3 class="promocion__titulo">Vuelve a clases con actitud</h3>
+                    </div>
+                    <div class="promocion__margin--texto promocion__margin--descripcion">
+                        <p class="promocion__descripcion">Regreso a clases con Banco de Loja</p>
+                    </div>
+                    <a href="#" class="promocion__link">Más información</a>
+                </div> <!-- campaña y promocion -->
+                <div class="promocion">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/zna9sSrvrUCTYPSMbCSz1A/Icon/MODULO-WEB.jpg?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
+                    <div class="promocion__margin">
+                        <h3 class="promocion__titulo">Crece y gana con tus utilidades</h3>
+                    </div>
+                    <div class="promocion__margin--texto promocion__margin--descripcion">
+                        <p class="promocion__descripcion promocion__descripcion--3">Participa por $5.000 en premios</p>
+                    </div>
+                    <a href="#" class="promocion__link">Más información</a>
+                </div> <!-- campaña y promocion -->
+                <div class="promocion">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/pA9_8W2910qhB96dl-JVzA/Icon/modulo.jpg?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
+                    <div class="promocion__margin">
+                        <h3 class="promocion__titulo">San Valentín</h3>
+                    </div>
+                    <div class="promocion__margin--texto promocion__margin--descripcion">
+                        <p class="promocion__descripcion">Tus consumos con tus tarjetas de crédito te premian</p>
+                    </div>
+                    <a href="#" class="promocion__link">Más información</a>
+                </div> <!-- campaña y promocion -->
+                <div class="promocion">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/rSMPPWDE8Ue8Hxpp6fWiRQ/Icon/portada.JPG?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
+                    <div class="promocion__margin">
+                        <h3 class="promocion__titulo">Regalazo Navideño</h3>
+                    </div>
+                    <div class="promocion__margin--texto promocion__margin--descripcion">
+                        <p class="promocion__descripcion">El mejor regalo te lo trae Visa Banco de Loja</p>
+                    </div>
+                    <a href="#" class="promocion__link">Más información</a>
+                </div> <!-- campaña y promocion -->
+                <div class="promocion">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/w17b7Y7MFESebRqMCMJ5Ig/Icon/ganador2.jpg?w=300&h=200&mode=crop" alt="campañas y promociones Banco de Loja" class="promocion__imagen">
+                    <div class="promocion__margin">
+                        <h3 class="promocion__titulo">Ganadores</h3>
+                    </div>
+                    <div class="promocion__margin--texto promocion__margin--descripcion">
+                        <p class="promocion__descripcion">Conoce a los increíbles ganadores de nuestras campañas</p>
+                    </div>
+                    <a href="#" class="promocion__link">Más información</a>
+                </div> <!-- campaña y promocion -->
+            </section> <!-- contenedor campañas y promociones -->
+        </main>
+    </div>
 
     <footer class="footer">
         <div class="fondo-white">
@@ -186,15 +233,18 @@
                         <p>(593-7) 3 701600</p>
                         <p>Casilla #11.01.30</p>
                         <p>Código SWIFT LOJBECEL</p>
+                        <p>soporte_enlinea@bancodeloja.fin.ec</p>
+                        <ul class="apps-company">
+                            <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="fondo-grey">
-            <div class="contenedor contenido-footer centrado">
-                <p>Todos los derechos reservados</p>
-                <p>Correo Electrónico: <strong>BancodeLoja@mail.com</strong></p>
-            </div>
+            <p class="copyright">Banco de Loja 2023 &copy; todos los derechos reservados</p>
         </div>
     </footer>
     

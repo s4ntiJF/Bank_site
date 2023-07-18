@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Loja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,57 +41,85 @@
         </section>
     </div>
 
-    <section class="contenedor centrado">
-        <div class="border-title">
-            <h1 class="titulo-giros">Giros</h1>
-        </div>
+    <div class="contenedor centrado">
 
-        <div class="seccion-items">
-            <section>
-                <h2 class="titulo-item">¿Por qué debes solicitar el servicio?</h2>
-                <ul class="item">
-                    <li>Te permite recibir o enviar dinero de forma rápida y segura, a través de Ria, una de las empresas con el servicio de transferencia de dinero más 
-                    grande del mundo con más de 397.000 ubicaciones en todo el mundo.</li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="titulo-item">¿Qué necesitas?</h2>
-                <ul class="item">
-                    <li>Presentación del documento de identidad</li>
-                    <li>Clave o código de envío</li>
-                    <li>Contar en la cuenta con los fondos que cubran el valor del giro o depósito del valor por ventanilla</li>
-                </ul>
-            </section>
-        </div>
-    </section>
+        <nav class="navegacion-secundaria">
+            <a href="index.html">Principal</a>
+            <p>></p>
+            <a href="cuentas.html">Personas</a>
+            <p>></p>
+            <a href="servicios.html">Servicios</a>
+            <p>></p>
+            <a href="giros.html">Giros</a>
+        </nav>
 
-    <section class="contenedor centrado">
-        <h3 class="titulo-interes">También te puede interesar...</h3>
-
-        <div class="contenedor-intereses">
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/uPZNE4uif0acfKWQWufJVw/Icon/Giros.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">Giro Ahorro</h3>
-                    <p class="interes__descripcion">Tus giros ganan intereses diarios y se acreditan sin costo.</p>
-                </div>
-            </div> <!-- giro -->
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/v7CYCYfArkaa3M4JHnM_rg/Icon/Banca%20Electronica.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">Banca Electrónica</h3>
-                    <p class="interes__descripcion">Realizar tus transacciones de manera rápida y sencilla donde sea que te encuentres.</p>
-                </div>
-            </div> <!-- giro -->
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/FBtz8HxlRUG4iNTixHVx5Q/Icon/CrediConsumo.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">CrediConsumo</h3>
-                    <p class="interes__descripcion">Ágil y oportuno para lo que necesites.</p>
-                </div>
-            </div> <!-- giro -->
-        </div> <!-- contenedor giros -->
-    </section>
+        <main>
+            <div class="border-title">
+                <h1 class="titulo-giros">Giros</h1>
+            </div>
+    
+            <div class="seccion-items">
+                <section>
+                    <h2 class="titulo-dinero">¿Por qué debes solicitar el servicio?</h2>
+                    <ul class="items">
+                        <li class="item-recibir">Te permite recibir o enviar dinero de forma rápida y segura, a través de Ria, una de las empresas con el servicio de transferencia de 
+                        dinero más grande del mundo con más de 397.000 ubicaciones en todo el mundo.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="titulo-dinero">¿Qué necesitas?</h2>
+                    <ul class="items">
+                        <li>Presentación del Documento de Identidad</li>
+                        <li>Cláve o código de envío</li>
+                        <li>Contar en la cuenta con los fondos que cubran el valor del giro o depósito del valor por ventanilla</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    
+        <section>
+            <h3 class="titulo-intereses">También te puede interesar...</h3>
+    
+            <div class="columnas-3-imgs">
+                <div class="giro">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/uPZNE4uif0acfKWQWufJVw/Icon/Giros.jpg?w=300&h=200&mode=crop" alt="giros Banco de Loja" class="imagen">
+                    <div class="giro__contenido">
+                        <div class="giro__margin">
+                            <h3 class="giro__nombre">Giro Ahorro</h3>
+                        </div>
+                        <div class="giro__margin--descripcion descripcion">
+                            <p class="giro__descripcion">Tus giros ganan intereses diarios y se acreditan sin costo.</p>
+                        </div>
+                        <a href="#" class="giro__link">Más información</a>
+                    </div>
+                </div> <!-- interes -->
+                <div class="giro">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/v7CYCYfArkaa3M4JHnM_rg/Icon/Banca%20Electronica.jpg?w=300&h=200&mode=crop" alt="giros Banco de Loja" class="imagen">
+                    <div class="giro__contenido">
+                        <div class="giro__margin">
+                            <h3 class="giro__nombre">Banca Electrónica</h3>
+                        </div>
+                        <div class="giro__margin--descripcion descripcion">
+                            <p class="giro__descripcion">Realiza tus transacciones de manera rápida y sencilla donde sea que te encuentres.</p>
+                        </div>
+                        <a href="#" class="giro__link">Más información</a>
+                    </div>
+                </div> <!-- interes -->
+                <div class="giro">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/FBtz8HxlRUG4iNTixHVx5Q/Icon/CrediConsumo.jpg?w=300&h=200&mode=crop" alt="giros Banco de Loja" class="imagen">
+                    <div class="giro__contenido">
+                        <div class="giro__margin">
+                            <h3 class="giro__nombre">CrediConsumo</h3>
+                        </div>
+                        <div class="giro__margin--descripcion descripcion">
+                            <p class="giro__descripcion">Ágil y oportuno para lo que necesites.</p>
+                        </div>
+                        <a href="#" class="giro__link">Más información</a>
+                    </div>
+                </div> <!-- interes -->
+            </div> <!-- contenedor intereses -->
+        </section>
+    </div>
 
     <footer class="footer">
         <div class="fondo-white">
@@ -204,15 +233,18 @@
                         <p>(593-7) 3 701600</p>
                         <p>Casilla #11.01.30</p>
                         <p>Código SWIFT LOJBECEL</p>
+                        <p>soporte_enlinea@bancodeloja.fin.ec</p>
+                        <ul class="apps-company">
+                            <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="fondo-grey">
-            <div class="contenedor contenido-footer centrado">
-                <p>Todos los derechos reservados</p>
-                <p>Correo Electrónico: <strong>BancodeLoja@gmail.com</strong></p>
-            </div>
+            <p class="copyright">Banco de Loja 2023 &copy; todos los derechos reservados</p>
         </div>
     </footer>
 

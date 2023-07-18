@@ -1,12 +1,14 @@
 :root{
     --white: #ffffff;
     --black: #000000;
-    --green: #005300f5;
-    --lightgreen: #00a100;
+    --green: #005a00;
     --darkGrey: #383838;
     --lightGrey: #e4e4e4;
+    --darkBlue: #2e45b6;
+    --lightBlue: #4b99ff;
+    --orange: #ffa723;
+    --lightgreen: #00a100;
     --red: #ec0000;
-
     --fuentePrincipal: 'Poppins', sans-serif;
 }
 
@@ -28,7 +30,7 @@ body{
 }
 
 h1{
-    font-size: 4rem;
+   font-size: 4rem; 
 }
 
 h3, h2{
@@ -40,7 +42,7 @@ h2{
 }
 
 h4{
-    font-size: 2rem;
+    font-size: 19px;
 }
 
 a{
@@ -102,7 +104,7 @@ img{
     width: 30rem;
 }
 
-/* Navegacion */
+/* Navegacion Principal */
 .bg-white{
     background-color: var(--white);
 }
@@ -126,11 +128,11 @@ img{
 
 .navegacion a{
     padding: 2rem;
-    color: var(--black);
+    color: var(--darkGrey);
     font-size: 1.7rem;
-    font-weight: 200;
     display: block;
     text-align: center;
+    font-weight: 300;
 }
 
 .navegacion a:hover{
@@ -187,10 +189,13 @@ img{
     }
 }
 
-.contenido-ahorro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@media (min-width: 768px){
+    .contenido-ahorro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 8rem;
+    }
 }
 
 .contenido-ahorro h3{
@@ -201,53 +206,77 @@ img{
 
 .contenedor-ahorro h1{
     font-weight: 100;
-    font-size: 6rem;
     margin: 0;
+    color: var(--darkGrey);
 }
 
 .contenedor-ahorro p{
+    color: var(--darkGrey);
     font-size: 1.5rem;
-    font-weight: 200;
+    font-weight: 300;
     max-width: 30rem;
     margin: 0;
 }
 
+.btn-solicitar-cuenta{
+    margin-top: 2rem;
+}
+
+.solicitar-cuenta{
+    color: var(--white);
+    background-color: var(--darkGrey);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.solicitar-cuenta:hover{
+    background-color: var(--lightGrey);
+}
+
 /* seccion 2 */
+.border{
+    border: 1px solid var(--red);
+}
+
 @media (min-width: 768px){
-    .contenedor-credito{
+    .img-credito-2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
+        column-gap: 9rem;
     }
 }
 
-.contenido-credito{
+.contenido-section2{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.contenido-credito h3{
+.contenido-section2 h3{
     color: var(--green);
     font-weight: 400;
     margin: 0;
 }
 
-.contenedor-credito h1{
+.contenido-section2 h1{
     font-weight: 100;
-    font-size: 6rem;
-    max-width: 20rem;
     margin: 0;
-    line-height: 1;
+    max-width: 20rem;
+    line-height: 50px;
+    color: var(--darkGrey);
+    font-size: 6rem;
 }
 
-.contenedor-credito p{
-    font-weight: 200;
-    margin: 0;
+.contenido-section2 p{
+    color: var(--darkGrey);
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 
 .boton-contacto{
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .contacto{
@@ -255,8 +284,9 @@ img{
     background-color: var(--darkGrey);
     padding: 1rem 2rem;
     border-radius: 1rem;
+    font-weight: 300;
+    font-size: 1.4rem;
 }
-
 
 .contacto:hover{
     background-color: var(--lightGrey);
@@ -277,6 +307,7 @@ img{
 }
 
 .contenido-servicios h1{
+    color: var(--darkGrey);
     font-weight: 100;
     text-align: center;
     margin: 0 0 1rem 0;
@@ -305,11 +336,12 @@ img{
     border-radius: .8rem;
     border: none;
     text-align: center;
+    box-shadow: 1rem 1rem 1rem rgb(191, 191, 191);
 }
 
 .servicio-enlace a{
-    color: var(--black);
-    font-weight: 200;
+    color: var(--darkGrey);
+    font-weight: 300;
     font-size: 1.5rem;
 }
 
@@ -319,7 +351,7 @@ img{
 
 /* Footer */
 .footer{
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .fondo-white{
@@ -343,20 +375,23 @@ img{
 
 .column-1 a{
     color: var(--black);
-    font-weight: 200;
-    font-size: 1.4rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: var(--darkGrey);
 }
 
 .column-2 a{
     color: var(--black);
-    font-weight: 200;
-    font-size: 1.4rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: var(--darkGrey);
 }
 
 .column-3 a{
     color: var(--black);
-    font-weight: 200;
-    font-size: 1.4rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: var(--darkGrey);
 }
 
 .column-1 p{
@@ -391,7 +426,7 @@ img{
 
 .color-grey{
     background-color: var(--lightGrey);
-    padding: 5rem 0 4rem 0;
+    padding: 3rem 0 3rem 0;
 }
 
 @media (min-width:768px){
@@ -412,49 +447,28 @@ img{
 
 .ubication{
     margin-left: 4rem;
+    display: inline-block;
 }
 
 .ubication p{
     margin: 0;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.3rem;
-    line-height: 1.2;
-}
-
-.apps{
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
+    line-height: 1.4;
+    color: var(--darkGrey);
 }
 
 .fondo-grey{
     background-color: var(--darkGrey);
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
-.contenido-footer{
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width:768px){
-    .contenido-footer{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.contenido-footer p{
-    color: var(--white);
+.copyright{
+    text-align: center;
     margin: 0;
-    font-size: 1.3rem;
+    color: var(--white);
     font-weight: 200;
-}
-
-.contenido-footer strong{
-    font-size: 1.5rem;
-    font-weight: 700;
-    font-style: italic;
+    font-size: 13px;
 }
 
 .border-section{
@@ -486,7 +500,93 @@ img{
     }
 }
 
-/* Seccion de cuentas Bancarios */
+.apps-company{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px){
+    .apps-company{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.fa-brands{
+    color: var(--white);
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.fa-brands:hover{
+    transform: translateY(-3%);
+}
+
+.fa-brands-facebook{
+    background-color: var(--darkBlue);
+    margin-top: 5px;
+}
+
+.fa-brands-twitter{
+    background-color: var(--lightBlue);
+    margin-top: 5px;
+}
+
+.fa-brands-instagram{
+    background-color: var(--orange);
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.fa-brands-facebook,
+.fa-brands-instagram,
+.fa-brands-twitter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navegacion secundaria */
+.navegacion-secundaria{
+    margin: 2rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .navegacion-secundaria{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.navegacion-secundaria a{
+    color: var(--green);
+    font-size: 1.5rem;
+    text-align: center;
+    display: contents;
+    font-weight: 300;
+}
+
+.navegacion-secundaria a:hover{
+    font-weight: 700;
+}
+
+.navegacion-secundaria p{
+    margin: 0;
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+
+/* Cuentas */
+.centrado{
+    max-width: 1100px;
+}
+
 .border-title{
     border-bottom: 2px solid var(--green);
 }
@@ -494,23 +594,84 @@ img{
 .titulo-cuenta{
     color: var(--green);
     font-weight: 400;
-    margin: 8rem 0 0 0;
+    margin: 4rem 0 0 0;
 }
 
-.contenedor-cuentas{
+.columnas-4-imgs{
     margin: 5rem 0 0 0;
 }
 
-@media (min-width:1200px){
-    .contenedor-cuentas{
+.columnas-4-imgs{
+    padding: 1rem;
+}
+
+@media (min-width:480px){
+    .columnas-4-imgs{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
 }
 
+@media (min-width:768px){
+    .columnas-4-imgs{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width:992px){
+    .columnas-4-imgs{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cuenta{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .cuenta__margin--descripcion{
+        flex-grow: 1;
+    }
+
+    .servicio{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .servicio__margin--descripcion{
+        flex-grow: 1;
+    }
+
+    .promocion{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .promocion__margin--descripcion{
+        flex-grow: 1;
+    }
+
+    .img-credito{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .credito__margin--descripcion{
+        flex-grow: 1;
+    }
+
+}
+
 .cuenta{
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     border: 1px solid var(--lightGrey);
     margin-bottom: 2rem;
 }
@@ -519,39 +680,54 @@ img{
     width: 100%;
 }
 
+.cuenta__margin{
+    margin-top: 1rem;
+}
+
+.cuenta__margin--texto{
+    margin-top: 5px;
+}
+
 .cuenta__titulo{
     color: var(--green);
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 16px;
+    margin: 0;
 }
 
-.cuenta__texto{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 1.2;
+.cuenta__descripcion{
+    color: var(--darkGrey);
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0;
 }
 
-/* Seccion de creditos Bancarios */
+.cuenta__descripcion--2,
+.cuenta__descripcion--4{
+    max-width: 200px;
+}
+
+.cuenta__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.cuenta__link:hover{
+    font-weight: 700;
+}
+
+/* Creditos */
 .titulo-credito{
     color: var(--green);
     font-weight: 400;
-    margin: 8rem 0 0 0;
-}
-
-.contenedor-creditos{
-    margin: 5rem 0 0 0;
-}
-
-@media (min-width:1200px){
-    .contenedor-creditos{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 2rem;
-    }
+    margin: 4rem 0 0 0;
 }
 
 .credito{
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     border: 1px solid var(--lightGrey);
     margin-bottom: 2rem;
 }
@@ -560,81 +736,109 @@ img{
     width: 100%;
 }
 
+.credito__margin{
+    margin-top: 1rem;
+}
+
+.credito__margin--texto{
+    margin-top: 5px;
+}
+
 .credito__titulo{
     color: var(--green);
     font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+.credito__descripcion{
+    color: var(--darkGrey);
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0;
+}
+
+.credito__descripcion--6{
+    max-width: 200px;
+}
+
+.credito__link{
+    color: var(--green);
+    font-weight: 300;
     font-size: 1.5rem;
+    display: block;
+    margin-top: 1rem;
 }
 
-.credito__texto{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 1.2;
+.credito__link:hover{
+    font-weight: 700;
 }
 
-/* Seccion de servicios Bancarios */
+/* Servicios */
 .titulo-servicio-bancario{
     color: var(--green);
     font-weight: 400;
-    margin: 8rem 0 0 0;
+    margin: 4rem 0 0 0;
 }
 
-.contenedor-servicios-bancarios{
-    margin: 5rem 0 0 0;
-}
-
-@media (min-width:1200px){
-    .contenedor-servicios-bancarios{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 2rem;
-    }
-}
-
-.servicio-bancario{
-    padding: 2rem;
+.servicio{
+    padding: 2rem 2rem 1rem 2rem;
     border: 1px solid var(--lightGrey);
     margin-bottom: 2rem;
 }
 
-.servicio-bancario__imagen{
+.servicio__imagen{
     width: 100%;
 }
 
-.servicio-bancario__titulo{
+.servicio__margin{
+    margin-top: 1rem;
+}
+
+.servicio__texto{
+    margin-top: 5px;
+}
+
+.servicio__titulo{
     color: var(--green);
     font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 1.2;
+    font-size: 16px;
+    line-height: 1.1;
+    margin: 0;
 }
 
-.servicio-bancario__texto{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 1.3;
+.servicio__descripcion{
+    color: var(--darkGrey);
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0;
 }
 
-/* Seccion de campañas y promociones */
+.servicio__descripcion--texto{
+    max-width: 200px;
+}
+
+.servicio__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.servicio__link:hover{
+    font-weight: 700;
+}
+
+/* Campañas y Promociones */
 .titulo-campaña{
     color: var(--green);
     font-weight: 400;
-    margin: 8rem 0 0 0;
-}
-
-.contenedor-promociones{
-    margin: 5rem 0 0 0;
-}
-
-@media (min-width:1200px){
-    .contenedor-promociones{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 2rem;
-    }
+    margin: 4rem 0 0 0;
 }
 
 .promocion{
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     border: 1px solid var(--lightGrey);
     margin-bottom: 2rem;
 }
@@ -643,89 +847,153 @@ img{
     width: 100%;
 }
 
+.promocion__margin{
+    margin-top: 1rem;
+}
+
+.promocion__margin--texto{
+    margin-top: 5px;
+}
+
 .promocion__titulo{
     color: var(--green);
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 16px;
+    letter-spacing: -1px;
     line-height: 1.2;
+    margin: 0;
 }
 
-.promocion__texto{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 1.2;
+.promocion__descripcion{
+    color: var(--darkGrey);
+    font-weight: 300;
+    font-size: 13px;
+    margin: 0;
 }
 
-/* Seccion de tarjetas */
+.promocion__descripcion--3{
+    max-width: 200px;
+}
+
+.promocion__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.promocion__link:hover{
+    font-weight: 700;
+}
+
+/* Tarjetas de Débito */
 .titulo-tarjetas{
     color: var(--green);
     font-weight: 400;
-    margin: 8rem 0 0 0;
+    margin: 4rem 0 0 0;
 }
 
 .centrado-contenido{
     max-width: 50rem;
 }
 
-.tarjetas-debito{
+.columnas-2-imgs{
     margin: 5rem 0 0 0;
+    padding: 1rem;
 }
 
-@media (min-width:768px){
-    .tarjetas-debito{
+@media (min-width: 480px){
+    .columnas-2-imgs{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
-}
 
-.tarjeta-debito{
-    padding: 2rem;
-    border: 1px solid var(--lightGrey);
-}
-
-.tarjeta-debito__imagen{
-    width: 100%;
-}
-
-.tarjeta-debito__titulo{
-    color: var(--green);
-    font-weight: 400;
-    font-size: 1.8rem;
-}
-
-.tarjetas-credito{
-    margin: 20rem 0 0 0;
-}
-
-@media (min-width:1200px){
-    .tarjetas-credito{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 2rem;
+    .debito{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
     }
 }
 
-.tarjeta-credito{
-    padding: 2rem;
+.debito__imagen{
+    width: 100%;
+}
+
+.debito{
+    border: 1px solid var(--lightGrey);
+    margin-bottom: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.debito__margin{
+    margin-top: 1rem;
+}
+
+.debito__titulo{
+    color: var(--green);
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0;
+}
+
+.debito__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 15px;
+    display: block;
+    margin-top: 2rem;
+}
+
+.debito__link:hover{
+    font-weight: 700;
+}
+
+/* Tarjetas de crédito */
+.img-credito{
+    padding: 2rem 2rem 1rem 2rem;
     border: 1px solid var(--lightGrey);
     margin-bottom: 2rem;
 }
 
-.tarjeta-credito__imagen{
+.credito__imagen{
     width: 100%;
 }
 
-.tarjeta-credito__titulo{
+.credito__titulo--visa{
     color: var(--green);
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 17px;
+    margin: 0;
 }
 
-.tarjeta-credito__texto{
-    font-size: 1.3rem;
-    font-weight: 200;
-    line-height: 1.2;
+.credito__descripcion{
+    color: var(--darkGrey);
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 13px;
+    margin: 0;
+}
+
+.credito__margin{
+    margin-top: 1rem;
+}
+
+.credito__margin--texto{
+    margin-top: 5px;
+}
+
+.credito__enlace{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.credito__enlace:hover{
+    font-weight: 700;
 }
 
 /* Formulario de contacto */
@@ -745,21 +1013,22 @@ img{
 
 .asterisco{
     color: var(--red);
-    font-weight: 700;
-    font-size: 1.8rem;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 .campo__field{
+    color: var(--darkGrey);
     width: 100%;
     padding: 1rem;
     border: 1px solid var(--lightGrey);
     border-radius: 1rem;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.4rem;
 }
 
 .campo{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .campo__label{
@@ -776,7 +1045,7 @@ img{
     border: none;
     padding: 1rem 5rem;
     color: var(--white);
-    font-weight: 200;
+    font-weight: 300;
     border-radius: 1rem;
     font-size: 1.4rem;
     cursor: pointer;
@@ -790,11 +1059,484 @@ img{
     display: none;
 }
 
-.flex{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+/* Inversiones */
+.titulo-inversion{
+    color: var(--green);
+    font-weight: 400;
+    margin: 4rem 0 0 0;
 }
+
+.titulo-credicarro{
+    color: var(--green);
+    font-weight: 400;
+    margin: 4rem 0 0 0;
+}
+
+.titulo-tarjeta-debito{
+    color: var(--green);
+    font-weight: 400;
+    margin: 4rem 0 0 0;
+}
+
+.seccion-items{
+    margin: 3rem 0 0 0;
+}
+
+.titulo-dinero{
+    font-weight: 400;
+    color: var(--darkGrey);
+}
+
+.items{
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.items li{
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--darkGrey);
+}
+
+.item-recibir{
+    max-width: 70rem;
+}
+
+/* Intereses */
+.titulo-intereses{
+    text-align: center;
+    color: var(--green);
+    font-weight: 400;
+    font-size: 26px;
+    margin: 6rem 0 0 0;
+}
+
+.titulo-objetivo{
+    color: var(--green);
+    font-weight: 400;
+    margin: 4rem 0 0 0;
+}
+
+.columnas-3-imgs{
+    margin: 5rem 0 0 0;
+}
+
+@media (min-width:768px){
+    .columnas-3-imgs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+
+    .interes{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .interes__contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .objetivo{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .objetivo__contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .credicarro{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .credicarro__contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descripcion{
+        flex-grow: 1;
+    }
+
+    .giro{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .giro__contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .debito-interes{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .debito-interes__contenido{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.interes{
+    margin-bottom: 2rem;
+    background-color: var(--lightGrey);
+    border-radius: 1rem;
+}
+
+.interes__contenido{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.interes__contenido--margin{
+    margin-top: 1rem;
+}
+
+.interes__nombre{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.interes__margin{
+    margin-top: 5px;
+}
+
+.interes__descripcion{
+    font-weight: 300;
+    font-size: 1.3rem;
+    max-width: 25rem;
+    line-height: 1.5;
+    color: var(--darkGrey);
+    margin: 0;
+}
+
+.descripcion-objetivo{
+    max-width: 30rem;
+}
+
+.descripcion-banca-electronica{
+    max-width: 30rem;
+}
+
+.interes__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.interes__link:hover{
+    font-weight: 700;
+}
+
+.imagen{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* Simuladores de productos */
+.titulo-simulador{
+    color: var(--green);
+    font-weight: 400;
+    margin: 4rem 0 0 0;
+}
+
+.titulo-giros{
+    color: var(--green);
+    font-weight: 400;
+    margin: 4rem 0 0 0;
+}
+
+.section-simuladores{
+    margin: 5rem 0 0 0;
+}
+
+.simulador{
+    background-color: var(--lightGrey);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.simulador__contenido{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.simulador__margin{
+    margin-top: 1rem;
+}
+
+.simulador__margin--descripcion{
+    margin-top: 5px;
+}
+
+.simulador__nombre{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.simulador__descripcion{
+    color: var(--darkGrey);
+    font-size: 1.3rem;
+    max-width: 30rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 300;
+}
+
+.descripcion__simulador{
+    max-width: 25rem;
+}
+
+.border{
+    border: 1px solid var(--lightGrey);
+}
+
+.simulador__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.simulador__link:hover{
+    font-weight: 700;
+}
+
+/* Ahorro objetivo */
+.objetivo{
+    background-color: var(--lightGrey);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.objetivo__contenido{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.objetivo__contenido--margin{
+    margin-top: 1rem;
+}
+
+.objetivo__nombre{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.objetivo__margin{
+    margin-top: 5px;
+}
+
+.objetivo__descripcion{
+    color: var(--darkGrey);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 300;
+}
+
+.objetivo__descripcion--3{
+    max-width: 28rem;
+}
+
+.objetivo__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.objetivo__link:hover{
+    font-weight: 700;
+}
+
+/* Intereses: tarjeta de debito */
+.debito-interes{
+    background-color: var(--lightGrey);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.debito-interes__nombre{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.debito-interes__contenido{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.debito-interes__margin{
+    margin-top: 1rem;
+}
+
+.debito-interes__descripcion--margin{
+    margin-top: 5px;
+}
+
+.debito-interes__descripcion{
+    color: var(--darkGrey);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 0;
+    font-weight: 300;
+}
+
+.descripcion3{
+    max-width: 300px;
+}
+
+.debito-interes__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.debito-interes__link:hover{
+    font-weight: 700;
+}
+
+/* Credicarro */
+.credicarro{
+    background-color: var(--lightGrey);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.credicarro__contenido{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.credicarro__margin{
+    margin-top: 1rem;
+}
+
+.credicarro__nombre{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.credicarro__descripcion{
+    color: var(--darkGrey);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    max-width: 29rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.credicarro__descripcion--3{
+    max-width: 28rem;
+}
+
+.credicarro__margin--descripcion{
+    margin-top: 5px;
+}
+
+.credicarro__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.credicarro__link:hover{
+    font-weight: 700;
+}
+
+/* Giros */
+.giro{
+    background-color: var(--lightGrey);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.giro__contenido{
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.giro__margin{
+    margin-top: 1rem;
+}
+
+.giro__margin--descripcion{
+    margin-top: 5px;
+}
+
+.giro__nombre{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--green);
+    margin: 0;
+}
+
+.giro__descripcion{
+    color: var(--darkGrey);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    max-width: 29rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.giro__link{
+    color: var(--green);
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+.giro__link:hover{
+    font-weight: 700;
+}
+
+.mensajeError{
+    color: var(--red);
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+}
+
+.datosEnviados{
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--lightgreen);
+}
+
+
 
 
 

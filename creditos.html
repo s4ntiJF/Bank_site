@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Loja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,44 +41,85 @@
         </section>
     </div>
 
-    <main class="contenedor centrado">
-        <div class="border-title">
-            <h1 class="titulo-credito">Creditos</h1>
-        </div>
+    <div class="contenedor centrado">
 
-        <section class="contenedor-creditos">
-            <div class="credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/g_a-6NJFYkuVghD_URdERw/Icon/shutterstock_172122617.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
-                <h3 class="credito__titulo">CrediConsumo</h3>
-                <p class="credito__texto">Ágil y oportuno para lo que necesites</p>
-            </div> <!-- credito -->
-            <div class="credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/THtI28f0-Uic0JfTb-5IzQ/Icon/shutterstock_663003223.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
-                <h3 class="credito__titulo">CrediCarro</h3>
-                <p class="credito__texto">Escógelo y fináncialo con nosotros</p>
-            </div> <!-- credito -->
-            <div class="credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/l3RjUYbjaEeY3W_LNpgPlg/Icon/shutterstock_580163974.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
-                <h3 class="credito__titulo">CrediConvenido</h3>
-                <p class="credito__texto">Un crédito preferencial por la acreditación de tu sueldo</p>
-            </div> <!-- credito -->
-            <div class="credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/Yj5io8kYYE69cgL5J5RwaQ/Icon/shutterstock_660004024.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
-                <h3 class="credito__titulo">Crédito Educativo</h3>
-                <p class="credito__texto">Prepárate para esos retos cada día más grandes</p>
-            </div> <!-- credito -->
-            <div class="credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/Pfm6Yub-9U66evyFN4SFmQ/Icon/shutterstock_1038143476.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
-                <h3 class="credito__titulo">Crédito Inmobiliario</h3>
-                <p class="credito__texto">Un hogar no es solo tu sueño, sino una meta familiar</p>
-            </div> <!-- credito -->
-            <div class="credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/Hl_EZhFMI0WhG_LrrTcHsg/Icon/Imagen.JPG?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
-                <h3 class="credito__titulo">Crédito Online</h3>
-                <p class="credito__texto">Un crédito pensado en ti y en tus necesidad</p>
-            </div> <!-- credito -->
-        </section> <!-- contenedor creditos -->
-    </main>
+        <nav class="navegacion-secundaria">
+            <a href="index.html">Principal</a>
+            <p>></p>
+            <a href="cuentas.html">Personas</a>
+            <p>></p>
+            <a href="creditos.html">Créditos</a>
+        </nav>
+
+        <main>
+            <div class="border-title">
+                <h1 class="titulo-credito">Creditos</h1>
+            </div>
+    
+            <section class="columnas-4-imgs">
+                <div class="credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/g_a-6NJFYkuVghD_URdERw/Icon/shutterstock_172122617.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo">CrediConsumo</h3>
+                    </div>
+                    <div class="credito__margin--texto">
+                        <p class="credito__descripcion">Ágil y oportuno para lo que necesites</p>
+                    </div>
+                    <a href="#" class="credito__link">Más información</a>
+                </div> <!-- credito -->
+                <div class="credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/THtI28f0-Uic0JfTb-5IzQ/Icon/shutterstock_663003223.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo">CrediCarro</h3>
+                    </div>
+                    <div class="credito__margin--texto">
+                        <p class="credito__descripcion">Escógelo y fináncialo con nosotros</p>
+                    </div>
+                    <a href="#" class="credito__link">Más información</a>
+                </div> <!-- credito -->
+                <div class="credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/l3RjUYbjaEeY3W_LNpgPlg/Icon/shutterstock_580163974.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo">CrediConvenido</h3>
+                    </div>
+                    <div class="credito__margin--texto">
+                        <p class="credito__descripcion">Un crédito preferencial por la acreditación de tu sueldo</p>
+                    </div>
+                    <a href="#" class="credito__link">Más información</a>
+                </div> <!-- credito -->
+                <div class="credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/Yj5io8kYYE69cgL5J5RwaQ/Icon/shutterstock_660004024.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo">Crédito Educativo</h3>
+                    </div>
+                    <div class="credito__margin--texto">
+                        <p class="credito__descripcion">Prepárate para esos retos cada día más grandes</p>
+                    </div>
+                    <a href="#" class="credito__link">Más información</a>
+                </div> <!-- credito -->
+                <div class="credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/Pfm6Yub-9U66evyFN4SFmQ/Icon/shutterstock_1038143476.jpg?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo">Crédito Inmobiliario</h3>
+                    </div>
+                    <div class="credito__margin--texto">
+                        <p class="credito__descripcion">Un hogar no es solo tu sueño, sino una meta familiar</p>
+                    </div>
+                    <a href="#" class="credito__link">Más información</a>
+                </div> <!-- credito -->
+                <div class="credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/Hl_EZhFMI0WhG_LrrTcHsg/Icon/Imagen.JPG?w=300&h=200&mode=crop" alt="cuentas Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo">Crédito en Línea</h3>
+                    </div>
+                    <div class="credito__margin--texto">
+                        <p class="credito__descripcion credito__descripcion--6">Un crédito pensado en ti y en tus necesidad</p>
+                    </div>
+                    <a href="#" class="credito__link">Más información</a>
+                </div> <!-- credito -->
+            </section> <!-- contenedor creditos -->
+        </main>
+    </div>
 
     <footer class="footer">
         <div class="fondo-white">
@@ -191,15 +233,18 @@
                         <p>(593-7) 3 701600</p>
                         <p>Casilla #11.01.30</p>
                         <p>Código SWIFT LOJBECEL</p>
+                        <p>soporte_enlinea@bancodeloja.fin.ec</p>
+                        <ul class="apps-company">
+                            <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="fondo-grey">
-            <div class="contenedor contenido-footer centrado">
-                <p>Todos los derechos reservados</p>
-                <p>Correo Electrónico: <strong>BancodeLoja@gmail.com</strong></p>
-            </div>
+            <p class="copyright">Banco de Loja 2023 &copy; todos los derechos reservados</p>
         </div>
     </footer>
     

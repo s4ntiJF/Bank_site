@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Loja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,49 +41,95 @@
         </section>
     </div>
 
-    <main class="contenedor centrado">
-        <div class="border-title">
-            <h1 class="titulo-servicio-bancario">Servicios</h1>
-        </div>
-        
-        <section class="contenedor-servicios-bancarios">
-            <div class="servicio-bancario">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/TrPSNNeoDUOVZ3HM30dj_Q/Icon/shutterstock_684792898.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio-bancario__imagen">
-                <h3 class="servicio-bancario__titulo">Tarjeta Débito</h3>
-                <p class="servicio-bancario__texto">Retiros, depósitos y compras a nivel nacional e internacional</p>
-            </div> <!-- servicio -->
-            <div class="servicio-bancario">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/7TmR4-ZNzEKRW0bRFPmyTA/Icon/Banca%20Electronica.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio-bancario__imagen">
-                <h3 class="servicio-bancario__titulo">Banca Electrónica</h3>
-                <p class="servicio-bancario__texto">Transacciones ágiles y seguras donde estés</p>
-            </div> <!-- servicio -->
-            <div class="servicio-bancario">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/D1BvdWzZwUiSvi-KL5aFHg/Icon/Banca%20Movil.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio-bancario__imagen">
-                <h3 class="servicio-bancario__titulo">Banca Móvil</h3>
-                <p class="servicio-bancario__texto">La forma más rápida y segura se realizar tu transacciones desde tu celular</p>
-            </div> <!-- servicio -->
-            <div class="servicio-bancario">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/ndPHjfHLXUO6QkZQ68PGUQ/Icon/PagoCentrosEducativosPersonas.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio-bancario__imagen">
-                <h3 class="servicio-bancario__titulo">Pago de Centros Educativos</h3>
-                <p class="servicio-bancario__texto">Paga las pensiones o matriculas de tu centro educativo de forma fácil y segura</p>
-            </div> <!-- servicio -->
-            <div class="servicio-bancario">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/LjRa6DZdoUq25lrgYJkt4Q/Icon/Pago%20Servicios%20b%C3%A1sicos.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio-bancario__imagen">
-                <h3 class="servicio-bancario__titulo">Pago de Servicios</h3>
-                <p class="servicio-bancario__texto">Tus pagos directos con débito a tu cuenta</p>
-            </div> <!-- servicio -->
-            <div class="servicio-bancario">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/3Wt_4NriNkmGpL-SIRTaow/Icon/shutterstock_676071160.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio-bancario__imagen">
-                <h3 class="servicio-bancario__titulo">Giros</h3>
-                <p class="servicio-bancario__texto">Envía o recibe dinero desde y hacia cualquier parte del mundo</p>
-            </div> <!-- servicio -->
-            <div class="servicio-bancario">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/tDdYhiDBkkizleDNP5b3Lg/Icon/shutterstock_773131522.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio-bancario__imagen">
-                <h3 class="servicio-bancario__titulo">Transferencias</h3>
-                <p class="servicio-bancario__texto">Bancarias e interbancarias por canales electrónicos o en nuestras oficinas</p>
-            </div> <!-- servicio -->
-        </section> <!-- contenedor cuentas -->
-    </main>
+    <div class="contenedor centrado">
+
+        <nav class="navegacion-secundaria">
+            <a href="index.html">Principal</a>
+            <p>></p>
+            <a href="cuentas.html">Personas</a>
+            <p>></p>
+            <a href="servicios.html">Servicios</a>
+        </nav>
+
+        <main>
+            <div class="border-title">
+                <h1 class="titulo-servicio-bancario">Servicios</h1>
+            </div>
+            
+            <section class="columnas-4-imgs">
+                <div class="servicio">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/TrPSNNeoDUOVZ3HM30dj_Q/Icon/shutterstock_684792898.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio__imagen">
+                    <div class="servicio__margin">
+                        <h3 class="servicio__titulo">Tarjeta Débito</h3>
+                    </div>
+                    <div class="servicio__texto servicio__margin--descripcion">
+                        <p class="servicio__descripcion">Retiros, depósitos y compras a nivel nacional e internacional</p>
+                    </div>
+                    <a href="#" class="servicio__link">Más información</a>
+                </div> <!-- servicio -->
+                <div class="servicio">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/7TmR4-ZNzEKRW0bRFPmyTA/Icon/Banca%20Electronica.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio__imagen">
+                    <div class="servicio__margin">
+                        <h3 class="servicio__titulo">Banca Electrónica</h3>
+                    </div>
+                    <div class="servicio__texto servicio__margin--descripcion">
+                        <p class="servicio__descripcion">Transacciones ágiles y seguras donde estés</p>
+                    </div>
+                    <a href="#" class="servicio__link">Más información</a>
+                </div> <!-- servicio -->
+                <div class="servicio">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/D1BvdWzZwUiSvi-KL5aFHg/Icon/Banca%20Movil.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio__imagen">
+                    <div class="servicio__margin">
+                        <h3 class="servicio__titulo">Banca Móvil</h3>
+                    </div>
+                    <div class="servicio__texto servicio__margin--descripcion">
+                        <p class="servicio__descripcion">La forma más rápida y segura se realiza tu transacciones desde tu celular</p>
+                    </div>
+                    <a href="#" class="servicio__link">Más información</a>
+                </div> <!-- servicio -->
+                <div class="servicio">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/ndPHjfHLXUO6QkZQ68PGUQ/Icon/PagoCentrosEducativosPersonas.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio__imagen">
+                    <div class="servicio__margin">
+                        <h3 class="servicio__titulo">Pago de Centros Educativos</h3>
+                    </div>
+                    <div class="servicio__texto servicio__margin--descripcion">
+                        <p class="servicio__descripcion servicio__descripcion--texto">Paga las pensiones o matriculas de tu centro educativo de forma fácil y segura</p>
+                    </div>
+                    <a href="#" class="servicio__link">Más información</a>
+                </div> <!-- servicio -->
+                <div class="servicio">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/LjRa6DZdoUq25lrgYJkt4Q/Icon/Pago%20Servicios%20b%C3%A1sicos.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio__imagen">
+                    <div class="servicio__margin">
+                        <h3 class="servicio__titulo">Pago de Servicios</h3>
+                    </div>
+                    <div class="servicio__texto servicio__margin--descripcion">
+                        <p class="servicio__descripcion servicio__descripcion--texto">Tus pagos directos con débito a tu cuenta</p>
+                    </div>
+                    <a href="#" class="servicio__link">Más información</a>
+                </div> <!-- servicio -->
+                <div class="servicio">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/3Wt_4NriNkmGpL-SIRTaow/Icon/shutterstock_676071160.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio__imagen">
+                    <div class="servicio__margin">
+                        <h3 class="servicio__titulo">Giros</h3>
+                    </div>
+                    <div class="servicio__texto servicio__margin--descripcion">
+                        <p class="servicio__descripcion">Envía o recibe dinero desde y hacia cualquier parte del mundo</p>
+                    </div>
+                    <a href="#" class="servicio__link">Más información</a>
+                </div> <!-- servicio -->
+                <div class="servicio">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/tDdYhiDBkkizleDNP5b3Lg/Icon/shutterstock_773131522.jpg?w=300&h=200&mode=crop" alt="servicios Banco de Loja" class="servicio__imagen">
+                    <div class="servicio__margin">
+                        <h3 class="servicio__titulo">Transferencias</h3>
+                    </div>
+                    <div class="servicio__texto servicio__margin--descripcion">
+                        <p class="servicio__descripcion">Bancarias e interbancarias por canales electrónicos o en nuestras oficinas</p>
+                    </div>
+                    <a href="#" class="servicio__link">Más información</a>
+                </div> <!-- servicio -->
+            </section> <!-- contenedor cuentas -->
+        </main>
+    </div>
 
     <footer class="footer">
         <div class="fondo-white">
@@ -196,15 +243,18 @@
                         <p>(593-7) 3 701600</p>
                         <p>Casilla #11.01.30</p>
                         <p>Código SWIFT LOJBECEL</p>
+                        <p>soporte_enlinea@bancodeloja.fin.ec</p>
+                        <ul class="apps-company">
+                            <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="fondo-grey">
-            <div class="contenedor contenido-footer centrado">
-                <p>Todos los derechos reservados</p>
-                <p>Correo Electrónico: <strong>BancodeLoja@gmail.com</strong></p>
-            </div>
+            <p class="copyright">Banco de Loja 2023 &copy; todos los derechos reservados</p>
         </div>
     </footer>
     

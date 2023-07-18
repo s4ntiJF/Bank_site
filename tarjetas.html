@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Loja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,55 +41,104 @@
         </section>
     </div>
 
-    <main class="contenedor centrado">
-        <div class="border-title">
-            <h1 class="titulo-tarjetas">Tarjetas</h1>
-        </div>
-        
-        <section class="tarjetas-debito centrado-contenido">
-            <div class="tarjeta-debito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/Servicios/Tarjeta%20de%20d%C3%A9bito/Debito.jpg?ver=rf_sFaDm2TZwzCfeTt5pWA%3d%3d&timestamp=1661442067854?w=300&h=200&mode=crop" alt="Tarjetas de debito Banco de Loja" class="tarjeta-debito__imagen">
-                <h3 class="tarjeta-debito__titulo">Tarjeta de débito</h3>
-            </div> <!-- tarjeta de debito -->
-            <div class="tarjeta-debito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/xdyVgk39T0a1SAPWo6rUDA/Icon/Promociones.jpg?w=300&h=200&mode=crop" alt="Tarjetas de debito Banco de Loja" class="tarjeta-debito__imagen">
-                <h3 class="tarjeta-debito__titulo">Promociones</h3>
-            </div> <!-- tarjeta de debito -->
-        </section> <!-- contenedor tarjetas de débito -->
-       
-        <section class="tarjetas-credito">
-            <div class="tarjeta-credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/UZU8JChbT0iKwm5xRABT9w/Icon/INFINITE.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="tarjeta-credito__imagen">
-                <h3 class="tarjeta-credito__titulo">Visa Infinite</h3>
-                <p class="tarjeta-credito__texto">Un mundo de experiencias</p>
-            </div> <!-- tarjeta de crédito -->
-            <div class="tarjeta-credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/_ZZrAMYK8UOmcv6ZLItC9w/Icon/GOLD-1.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="tarjeta-credito__imagen">
-                <h3 class="tarjeta-credito__titulo">Visa Gold</h3>
-                <p class="tarjeta-credito__texto">Planea tu siguiente gran experiencia</p>
-            </div> <!-- tarjeta de crédito -->
-            <div class="tarjeta-credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/RyT6cr85yUyRN7dhUIrRPg/Icon/CLASICA-1.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="tarjeta-credito__imagen">
-                <h3 class="tarjeta-credito__titulo">Visa Clásica</h3>
-                <p class="tarjeta-credito__texto">Disfruta la libertad de comprar siempre seguro</p>
-            </div> <!-- tarjeta de crédito -->
-            <div class="tarjeta-credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/Personas/Tarjetas%20de%20cr%C3%A9dito/Visa-Pymes.jpg?ver=xRnXObug-VEIocoPJvoHwQ%3d%3d&timestamp=1676654420316?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="tarjeta-credito__imagen">
-                <h3 class="tarjeta-credito__titulo">Tarjeta Pymes</h3>
-                <p class="tarjeta-credito__texto">La tarjeta que su empresa necesita</p>
-            </div> <!-- tarjeta de crédito -->
-            <div class="tarjeta-credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/xdyVgk39T0a1SAPWo6rUDA/Icon/Promociones.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="tarjeta-credito__imagen">
-                <h3 class="tarjeta-credito__titulo">Promociones</h3>
-                <p class="tarjeta-credito__texto">Pagar con tu tarjeta te otorga descuentos y promociones</p>
-            </div> <!-- tarjeta de crédito -->
-            <div class="tarjeta-credito">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/F5mDhcQxDUGech2Wccyzbw/Icon/Campa%C3%B1as.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="tarjeta-credito__imagen">
-                <h3 class="tarjeta-credito__titulo">Campañas</h3>
-                <p class="tarjeta-credito__texto">Celebramos cada fecha especial para ti</p>
-            </div> <!-- tarjeta de crédito -->
-        </section> <!-- contenedor tarjetas de crédito-->
-    </main>
+    <div class="contenedor centrado">
+
+        <nav class="navegacion-secundaria">
+            <a href="index.html">Principal</a>
+            <p>></p>
+            <a href="cuentas.html">Personas</a>
+            <p>></p>
+            <a href="servicios.html">Servicios</a>
+            <p>></p>
+            <a href="tarjetas.html">Tarjetas</a>
+        </nav>
+
+        <main>
+            <div class="border-title">
+                <h1 class="titulo-tarjetas">Tarjetas</h1>
+            </div>
+            
+            <section class="columnas-2-imgs centrado-contenido">
+                <div class="debito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/Servicios/Tarjeta%20de%20d%C3%A9bito/Debito.jpg?ver=rf_sFaDm2TZwzCfeTt5pWA%3d%3d&timestamp=1661442067854?w=300&h=200&mode=crop" alt="Tarjetas de debito Banco de Loja" class="debito__imagen">
+                    <div class="debito__margin">
+                        <h3 class="debito__titulo">Tarjeta de débito</h3>
+                    </div>
+                    <a href="#" class="debito__link">Más información</a>
+                </div> <!-- tarjeta de debito -->
+                <div class="debito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/xdyVgk39T0a1SAPWo6rUDA/Icon/Promociones.jpg?w=300&h=200&mode=crop" alt="Tarjetas de debito Banco de Loja" class="debito__imagen">
+                    <div class="debito__margin">
+                        <h3 class="debito__titulo">Promociones</h3>
+                    </div>
+                    <a href="#" class="debito__link">Más información</a>
+                </div> <!-- tarjeta de debito -->
+            </section> <!-- contenedor tarjetas de débito -->
+           
+            <section class="columnas-4-imgs">
+                <div class="img-credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/UZU8JChbT0iKwm5xRABT9w/Icon/INFINITE.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo--visa">Visa Infinite</h3>
+                    </div>
+                    <div class="credito__margin--texto credito__margin--descripcion">
+                        <p class="credito__descripcion">Un mundo de experiencias</p>
+                    </div>
+                    <a href="#" class="credito__enlace">Más información</a>
+                </div> <!-- tarjeta de crédito -->
+                <div class="img-credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/_ZZrAMYK8UOmcv6ZLItC9w/Icon/GOLD-1.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo--visa">Visa Gold</h3>
+                    </div>
+                    <div class="credito__margin--texto credito__margin--descripcion">
+                        <p class="credito__descripcion">Planea tu siguiente gran experiencia</p>
+                    </div>
+                    <a href="#" class="credito__enlace">Más información</a>
+                </div> <!-- tarjeta de crédito -->
+                <div class="img-credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/RyT6cr85yUyRN7dhUIrRPg/Icon/CLASICA-1.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo--visa">Visa Clásica</h3>
+                    </div>
+                    <div class="credito__margin--texto credito__margin--descripcion">
+                        <p class="credito__descripcion">Disfruta la libertad de comprar siempre seguro</p>
+                    </div>
+                    <a href="#" class="credito__enlace">Más información</a>
+                </div> <!-- tarjeta de crédito -->
+                <div class="img-credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/Personas/Tarjetas%20de%20cr%C3%A9dito/Visa-Pymes.jpg?ver=xRnXObug-VEIocoPJvoHwQ%3d%3d&timestamp=1676654420316?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo--visa">Tarjeta Pymes</h3>
+                    </div>
+                    <div class="credito__margin--texto credito__margin--descripcion">
+                        <p class="credito__descripcion">La tarjeta que su empresa necesita</p>
+                    </div>
+                    <a href="#" class="credito__enlace">Más información</a>
+                </div> <!-- tarjeta de crédito -->
+                <div class="img-credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/xdyVgk39T0a1SAPWo6rUDA/Icon/Promociones.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo--visa">Promociones</h3>
+                    </div>
+                    <div class="credito__margin--texto credito__margin--descripcion">
+                        <p class="credito__descripcion">Pagar con tu tarjeta te otorga descuentos y promociones</p>
+                    </div>
+                    <a href="#" class="credito__enlace">Más información</a>
+                </div> <!-- tarjeta de crédito -->
+                <div class="img-credito">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/F5mDhcQxDUGech2Wccyzbw/Icon/Campa%C3%B1as.jpg?w=300&h=200&mode=crop" alt="Tarjetas de credito Banco de Loja" class="credito__imagen">
+                    <div class="credito__margin">
+                        <h3 class="credito__titulo--visa">Campañas</h3>
+                    </div>
+                    <div class="credito__margin--texto credito__margin--descripcion">
+                        <p class="credito__descripcion">Celebramos cada fecha especial para ti</p>
+                    </div>
+                    <a href="#" class="credito__enlace">Más información</a>
+                </div> <!-- tarjeta de crédito -->
+            </section> <!-- contenedor tarjetas de crédito-->
+        </main>
+    </div>
 
     <footer class="footer">
         <div class="fondo-white">
@@ -202,15 +252,18 @@
                         <p>(593-7) 3 701600</p>
                         <p>Casilla #11.01.30</p>
                         <p>Código SWIFT LOJBECEL</p>
+                        <p>soporte_enlinea@bancodeloja.fin.ec</p>
+                        <ul class="apps-company">
+                            <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="fondo-grey">
-            <div class="contenedor contenido-footer centrado">
-                <p>Todos los derechos reservados</p>
-                <p>Correo Electrónico: <strong>BancodeLoja@gmail.com</strong></p>
-            </div>
+            <p class="copyright">Banco de Loja 2023 &copy; todos los derechos reservados</p>
         </div>
     </footer>
     

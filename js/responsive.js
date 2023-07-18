@@ -5,18 +5,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function eventListeners(){
-    const menuResponsive = document.querySelector('.navegacion-responsive');
-    menuResponsive.addEventListener('click', navegacionResponsive);
+    const navegacionResponsive = document.querySelector('.navegacion-responsive');
+    navegacionResponsive.addEventListener('click', menuResponsive);
 }
 
-function navegacionResponsive(){
-    const navegacion = document.querySelector('.navegacion-principal');
-    if(navegacion.classList.contains('mostrar')){
-        navegacion.classList.remove('mostrar');
+function menuResponsive(){
+    const navegacionPrincipal = document.querySelector('.navegacion');
+    if( navegacionPrincipal.classList.contains('mostrar') ){
+        navegacionPrincipal.classList.remove('mostrar');
     } else {
-        navegacion.classList.add('mostrar');
+        navegacionPrincipal.classList.add('mostrar');
     }
 }
+
+// Fijar el menu 
 
 function navegacionFija(){
     const barra = document.querySelector('.header');

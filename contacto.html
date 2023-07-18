@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Loja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -46,25 +47,20 @@
         </div>
 
         <form class="formulario">
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="productos">Producto</label>
-                </div>
-                <select class="campo__field" id="productos">
+            <div class="campo productos campo-input producto-label campo__field--productos">
+                <label for="productos" id="producto-label"><span class="asterisco">*</span> Producto</label>
+                <select class="campo__field campo__field--productos" id="productos">
                     <option value="">Seleccione un producto</option>
                     <option value="cuentas">Cuentas</option>
                     <option value="inversiones">Inversiones</option>
                     <option value="creditos">Créditos</option>
                     <option value="tarjeta credito">Tarjeta de Crédito</option>
                 </select>
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="">Subproducto</label>
-                </div>
-                <select class="campo__field" id="subproductos">
+            <div class="campo subproductos campo-input label-subproducto campo__field--subproductos">
+                <label for="subproducto" id="label-subproducto"><span class="asterisco">*</span> Subproducto</label>
+                <select class="campo__field campo__field--subproductos" id="subproductos">
                     <option value="">Seleccione un subproducto</option>
                     <option value="corriente">Corriente</option>
                     <option value="ahorros">Ahorros</option>
@@ -81,61 +77,48 @@
                     <option value="educativo">Educativo</option>
                     <option value="tarjeta credito">Tarjeta de Crédito</option>
                 </select>
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="tipo-documento">Tipo documento</label>
-                </div>
-                <select class="campo__field" id="tipo-documento">
+            <div class="campo tipo-documento campo-input label-tipoDocumento campo__field--tipoDocumento">
+                <label for="tipo-documento" id="label-tipoDocumento"><span class="asterisco">*</span> Tipo documento</label>
+                <select class="campo__field campo__field--documento" id="tipo-documento">
                     <option value="cedula">Cédula</option>
                     <option value="RUC">RUC</option>
                 </select>
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="n-documento">No. Documento</label>
-                </div>
-                <input type="text" class="campo__field" id="n-documento">
+            <div class="campo n-documento campo-input label-nDocumento campo__field--nDocumento">
+                <label for="n-documento" id="label-nDocumento"><span class="asterisco">*</span> No. Documento</label>
+                <input type="text" class="campo__field campo__field--nombre" id="n-documento">
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="nombres">Nombres</label>
-                </div>
-                <input type="text" class="campo__field" id="nombres">
+            <div class="campo nombres campo-input label-nombres campo__field--nombres">
+                <label for="nombres" id="label-nombres"><span class="asterisco">*</span> Nombres</label>
+                <input type="text" class="campo__field campo__field--nombres" id="nombres">
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="apellidos">Apellidos</label>
-                </div>
-                <input type="text" class="campo__field" id="apellidos">
+            <div class="campo apellidos campo-input label-apellidos campo__field--apellidos">
+                <label for="apellidos" id="label-apellidos"><span class="asterisco">*</span> Apellidos</label>
+                <input type="text" class="campo__field campo__field--apellidos" id="apellidos">
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="edad">Edad</label>
-                </div>
-                <input type="text" class="campo__field" id="edad">
+            <div class="campo edad campo-input label-edad campo__field--edad">
+                <label for="edad" id="label-edad"><span class="asterisco">*</span> Edad</label>
+                <input type="text" class="campo__field campo__field--edad" id="edad">
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="estado-civil">Estado Civil</label>
-                </div>
-                <select class="campo__field" id="estado-civil">
+            <div class="campo estado-civil campo-input label-estado campo__field--estado">
+                <label for="estado-civil" id="label-estado"><span class="asterisco">*</span> Estado Civil</label>
+                <select class="campo__field campo__field--estado" id="estado-civil">
                     <option value="soltero">Soltero</option>
                     <option value="casado">Casado</option>
                 </select>
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="correo">Correo electrónico</label>
-                </div>
-                <input type="email" class="campo__field" id="correo">
+            <div class="campo correo campo-input label-correo campo__field-correo">
+                <label for="correo" id="label-correo"><span class="asterisco">*</span> Correo electrónico</label>
+                <input type="email" class="campo__field campo__field-correo" id="correo">
+                <p class="mensajeError"></p>
             </div>
             <div class="campo">
                 <label for="telefono1" class="campo__label">Teléfono convencional</label>
@@ -145,26 +128,22 @@
                 <label for="telefono2" class="campo__label">Teléfono celular</label>
                 <input type="tel" class="campo__field" id="telefono2">
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="ciudad">Ciudad de residencia</label>
-                </div>
-                <input type="text" class="campo__field" id="ciudad">
+            <div class="campo ciudad campo-input label-ciudad campo__field--ciudad">
+                <label for="ciudad" id="label-ciudad"><span class="asterisco">*</span> Ciudad de residencia</label>
+                <input type="text" class="campo__field campo__field--ciudad" id="ciudad">
+                <p class="mensajeError"></p>
             </div>
-            <div class="campo">
-                <div class="flex">
-                    <span class="asterisco">*</span>
-                    <label for="direccion">Dirección</label>
-                </div>
-                <input type="text" class="campo__field" id="direccion">
+            <div class="campo direccion campo-input label-direccion campo__field--direccion">
+                <label for="direccion" id="label-direccion"><span class="asterisco">*</span> Dirección</label>
+                <input type="text" class="campo__field campo__field--direccion" id="direccion">
+                <p class="mensajeError"></p>
             </div>
             <div class="campo">
                 <label for="mensaje" class="campo__label">Observaciones</label>
                 <textarea id="mensaje" class="campo__field campo__field--textarea"></textarea>
             </div>
             <input type="submit" value="Enviar" class="btn-enviar">
-            <div id="obligatorio"></div>
+            <p class="datosEnviados"></p>
         </form>
     </main>    
 
@@ -280,15 +259,18 @@
                         <p>(593-7) 3 701600</p>
                         <p>Casilla #11.01.30</p>
                         <p>Código SWIFT LOJBECEL</p>
+                        <p>soporte_enlinea@bancodeloja.fin.ec</p>
+                        <ul class="apps-company">
+                            <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="fondo-grey">
-            <div class="contenedor contenido-footer centrado">
-                <p>Todos los derechos reservados</p>
-                <p>Correo Electrónico: <strong>BancodeLoja@gmail.com</strong></p>
-            </div>
+            <p class="copyright">Banco de Loja 2023 &copy; todos los derechos reservados</p>
         </div>
     </footer>
     

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Loja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,49 +41,81 @@
         </section>
     </div>
 
-    <section class="contenedor centrado">
-        <div class="border-title">
-            <h1 class="titulo-simulador">Simuladores</h1>
-        </div>
+    <div class="contenedor centrado">
 
-        <div class="contenedor-intereses">
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/PbJsXGDls0O3FrNrlrSi1Q/Icon/shutterstock_172122617.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">Crediconsumo</h3>
-                    <p class="interes__descripcion">Calcula tus cuotas y consigue lo que siempre quisiste.</p>
-                </div>
-            </div> <!-- simulador -->
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/vH175bTuz0Ol4h1zMkAGRA/Icon/shutterstock_1038143476.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">Credicasa</h3>
-                    <p class="interes__descripcion">Deja tu nuevo hogar en nuestras manos, proyecta tu nuevo crédito aquí.</p>
-                </div>
-            </div> <!-- simulador -->
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/ugA0Ka8y0USgAE0G-1pbEA/Icon/shutterstock_663003223.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">Credicarro</h3>
-                    <p class="interes__descripcion">Escoge el auto de tus sueños y calculas las cuotas del pago.</p>
-                </div>
-            </div> <!-- simulador -->
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/-l_kzLAkA0iA-eM1WYutcA/Icon/shutterstock_713443921.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">Inversiones</h3>
-                    <p class="interes__descripcion">Invierte tu dinero en una entidad segura, proyecta aquí tus intereses.</p>
-                </div>
-            </div> <!-- simulador -->
-            <div class="interes">
-                <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/xeC0xB6H-kyIvITK-0EVAA/Icon/Ahorro_Objetivo.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
-                <div class="interes__contenido">
-                    <h3 class="interes__nombre">Ahorro Objetivo</h3>
-                    <p class="interes__descripcion">Da el primer paso para cumplir tus metas, simula tu ahorro a largo plazo.</p>
-                </div>
-            </div> <!-- simulador -->
-        </div> <!-- contenedor simuladores -->
-    </section>
+        <nav class="navegacion-secundaria">
+            <a href="productos.html">Simuladores</a>
+        </nav>
+
+        <main>
+            <div class="border-title">
+                <h1 class="titulo-simulador">Simuladores</h1>
+            </div>
+    
+            <div class="columnas-3-imgs section-simuladores">
+                <div class="simulador">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/PbJsXGDls0O3FrNrlrSi1Q/Icon/shutterstock_172122617.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
+                    <div class="simulador__contenido">
+                        <div class="simulador__margin">
+                            <h3 class="simulador__nombre">Crediconsumo</h3>
+                        </div>
+                        <div class="simulador__margin--descripcion">
+                            <p class="simulador__descripcion descripcion__simulador">Calcula tus cuotas y consigue lo que siempre quisiste.</p>
+                        </div>
+                        <a href="#" class="simulador__link">Más información</a>
+                    </div>
+                </div> <!-- simulador -->
+                <div class="simulador">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/vH175bTuz0Ol4h1zMkAGRA/Icon/shutterstock_1038143476.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
+                    <div class="simulador__contenido">
+                        <div class="simulador__margin">
+                            <h3 class="simulador__nombre">Credicasa</h3>
+                        </div>
+                        <div class="simulador__margin--descripcion">
+                            <p class="simulador__descripcion">Deja tu nuevo hogar en nuestras manos, proyecta tu nuevo crédito aquí.</p>
+                        </div>
+                        <a href="#" class="simulador__link">Más información</a>
+                    </div>
+                </div> <!-- simulador -->
+                <div class="simulador">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/ugA0Ka8y0USgAE0G-1pbEA/Icon/shutterstock_663003223.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
+                    <div class="simulador__contenido">
+                        <div class="simulador__margin">
+                            <h3 class="simulador__nombre">Credicarro</h3>
+                        </div>
+                        <div class="simulador__margin--descripcion">
+                            <p class="simulador__descripcion">Escoge el auto de tus sueños y calculas las cuotas del pago.</p>
+                        </div>
+                        <a href="#" class="simulador__link">Más información</a>
+                    </div>
+                </div> <!-- simulador -->
+                <div class="simulador">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/-l_kzLAkA0iA-eM1WYutcA/Icon/shutterstock_713443921.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
+                    <div class="simulador__contenido">
+                        <div class="simulador__margin">
+                            <h3 class="simulador__nombre">Inversiones</h3>
+                        </div>
+                        <div class="simulador__margin--descripcion">
+                            <p class="simulador__descripcion">Invierte tu dinero en una entidad segura, proyecta aquí tus intereses.</p>
+                        </div>
+                        <a href="#" class="simulador__link">Más información</a>
+                    </div>
+                </div> <!-- simulador -->
+                <div class="simulador">
+                    <img src="https://www.bancodeloja.fin.ec/Portals/0/adam/Submenu/xeC0xB6H-kyIvITK-0EVAA/Icon/Ahorro_Objetivo.jpg?w=300&h=200&mode=crop" alt="inversiones Banco de Loja" class="imagen">
+                    <div class="simulador__contenido">
+                        <div class="simulador__margin">
+                            <h3 class="simulador__nombre">Ahorro Objetivo</h3>
+                        </div>
+                        <div class="simulador__margin--descripcion">
+                            <p class="simulador__descripcion">Da el primer paso para cumplir tus metas, simula tu ahorro a largo plazo.</p>
+                        </div>
+                        <a href="#" class="simulador__link">Más información</a>
+                    </div>
+                </div> <!-- simulador -->
+            </div> <!-- contenedor simuladores -->
+        </main>
+    </div>
 
     <footer class="footer">
         <div class="fondo-white">
@@ -196,15 +229,18 @@
                         <p>(593-7) 3 701600</p>
                         <p>Casilla #11.01.30</p>
                         <p>Código SWIFT LOJBECEL</p>
+                        <p>soporte_enlinea@bancodeloja.fin.ec</p>
+                        <ul class="apps-company">
+                            <li><a href="#"><i class="fa-brands fa-brands-facebook fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-twitter fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-brands-instagram fa-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="fondo-grey">
-            <div class="contenedor contenido-footer centrado">
-                <p>Todos los derechos reservados</p>
-                <p>Correo Electrónico: <strong>BancodeLoja@gmail.com</strong></p>
-            </div>
+            <p class="copyright">Banco de Loja 2023 &copy; todos los derechos reservados</p>
         </div>
     </footer>
 
